@@ -35,13 +35,13 @@ To link the variables, opc.js uses a RESTful client to communicate with the opc 
 You can read multiple types of variable types with this library.
 You should always specify the type of variable you want to write or read so that opc.js can react accordingly.
 
-###**opc.js general classes:** 
+###opc.js general classes:
 ```
 * **opcVar** *required*: general opc variable. It will automaticaly update its state after reading the value from the OPC server.
 * **opcWrite** *optional*: Works as the previous one, but will also write the value if the user changes it.
 ```
 
-###**opc.js variable classes:**
+###opc.js variable classes:
 
 
 * **opcButton**: 
