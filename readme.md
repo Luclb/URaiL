@@ -40,7 +40,7 @@ To link the variables, opc.js uses a RESTful client to communicate with the opc 
 You can read multiple types of variable types with this library.
 You should always specify the type of variable you want to write or read so that opc.js can react accordingly.
 
-###opc.js general classes:
+### opc.js general classes:
 ```
 * **opcVar** *required*: general opc variable. It will automaticaly update its state after reading the value from the OPC server.
 * **opcWrite** *optional*: Works as the previous one, but will also write the value if the user changes it.
@@ -52,36 +52,36 @@ You should always specify the type of variable you want to write or read so that
 * **opcButton**: 
 	* on write: will write True of False in the variable;
 	* on read: will toggle the "active" state of the button (usually pressed or not pressed);
-```
-<button type="button" id="myOpcBooleanVar" class="btn btn-info opcVar opcButton opc Write">Something</button>
-```
+		```
+		<button type="button" id="myOpcBooleanVar" class="btn btn-info opcVar opcButton opc Write">Something</button>
+		```
 
 * **opcSwitch**: 
 It is typically used for checkboxes displayed as switches.
 Functions just as the button, but the *checked* property is added or removed instead of *active*
 	* on write: will write True of False in the variable;
 	* on read: will toggle the "checked" state of the switch;
-```
-<button type="button" id="myOpcBooleanVar" class="btn btn-info opcVar opcButton opc Write">Something</button>
-```
+		```
+		<button type="button" id="myOpcBooleanVar" class="btn btn-info opcVar opcButton opc Write">Something</button>
+		```
 
 * **opcText** :
 opcText uses the html() function of Jquery. Therefore you can use it to display a value in a table for example.
 	* on write : must be inserted in an input --> to be done
 	* on read : it will display the value read in the server.
 
-```
-<table>
-  <tr>
-    <th>Parametre</th>
-    <th>Valeur</th> 
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td class= "opcVar opcText " id="myOpcTextVar"></td> 
-  </tr>
- </table>
-```
+		```
+		<table>
+		  <tr>
+		    <th>Parametre</th>
+		    <th>Valeur</th> 
+		  </tr>
+		  <tr>
+		    <td>Jill</td>
+		    <td class= "opcVar opcText " id="myOpcTextVar"></td> 
+		  </tr>
+		 </table>
+		```
 
 
 
